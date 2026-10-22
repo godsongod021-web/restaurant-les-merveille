@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Les Merveilles | Saveurs Gourmandes & Raffinement</title>
+    <meta name="description" content="Bienvenue au restaurant Les Merveilles. Découvrez une cuisine authentique et raffinée, préparée avec passion et des produits frais de saison.">
+
+    <!-- Polices Google Fonts (Cormorant Garamond pour l'élégance, Montserrat pour la lisibilité) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icônes Font Awesome pour des symboles modernes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Feuille de style personnalisée -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ==============================================
+         1. BARRE DE NAVIGATION (HEADER)
+         ============================================== -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#accueil" class="brand-logo">
+                <span class="logo-accent">Les</span> Merveilles
+            </a>
+
+            <!-- Liens de navigation pour grand écran -->
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#accueil" class="nav-link active">Accueil</a></li>
+                    <li><a href="#a-propos" class="nav-link">À Propos</a></li>
+                    <li><a href="#menu" class="nav-link">Notre Menu</a></li>
+                    <li><a href="#galerie" class="nav-link">Galerie</a></li>
+                    <li><a href="#avis" class="nav-link">Avis</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <a href="#reservation" class="btn btn-primary nav-cta">Réserver une table</a>
+            </nav>
+
+            <!-- Bouton burger pour écran mobile -->
+            <button class="menu-toggle" id="menu-toggle" aria-label="Ouvrir le menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- ==============================================
+             2. SECTION D'ACCUEIL (HERO BANNER)
+             ============================================== -->
+        <section class="hero" id="accueil">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <span class="hero-subtitle">Une expérience gastronomique inoubliable</span>
+                <h1 class="hero-title">L'Art du Goût & de la Passion</h1>
+                <p class="hero-description">
+                    Bienvenue au restaurant <strong>Les Merveilles</strong>. Savourez des mets d'exception, préparés chaque jour avec des ingrédients frais, locaux et de saison.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn btn-primary">Découvrir le Menu</a>
+                    <a href="#reservation" class="btn btn-outline">Réserver une Table</a>
+                </div>
+                <div class="hero-highlights">
+                    <div class="highlight-item">
+                        <i class="fa-solid fa-seedling"></i>
+                        <span>Produits 100% Frais</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fa-solid fa-award"></i>
+                        <span>Cuisine Fait Maison</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fa-solid fa-heart"></i>
+                        <span>Accueil Chaleureux</span>
+                    </div>
+                </div>
+            </div>
+            <a href="#a-propos" class="scroll-down-btn" aria-label="Défiler vers le bas">
+                <i class="fa-solid fa-chevron-down"></i>
+            </a>
+        </section>
+
+        <!-- ==============================================
+             3. SECTION PRÉSENTATION DU RESTAURANT (À PROPOS)
+             ============================================== -->
+        <section class="about section-padding" id="a-propos">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-images">
+                        <div class="image-wrapper main-img">
+                            <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80" alt="Salle de restaurant Les Merveilles">
+                        </div>
+                        <div class="image-wrapper sub-img">
+                            <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=500&q=80" alt="Chef préparant un plat délicieux">
+                        </div>
+                        <div class="experience-badge">
+                            <span class="exp-years">10+</span>
+                            <span class="exp-text">Ans d'Excellence Culinaire</span>
+                        </div>
+                    </div>
+
+                    <div class="about-text">
+                        <div class="section-badge">Notre Histoire</div>
+                        <h2 class="section-title">Bienvenue au Restaurant Les Merveilles</h2>
+                        <p class="lead-text">
+                            Né d'une passion inconditionnelle pour les saveurs authentiques, <em>Les Merveilles</em> vous propose une cuisine inventive dans un cadre intime et élégant.
+                        </p>
+                        <p>
+                            Chaque assiette que nous servons est une invitation au voyage. Nos chefs sélectionnent avec rigueur des produits nobles auprès de producteurs locaux, pour vous garantir une fraîcheur et une qualité incomparables.
+                        </p>
+
+                        <div class="about-features">
+                            <div class="feature-box">
+                                <div class="feature-icon"><i class="fa-solid fa-utensils"></i></div>
+                                <div>
+                                    <h3>Recettes Raffinées</h3>
+                                    <p>Un subtil équilibre entre tradition gourmande et modernité.</p>
+                                </div>
+                            </div>
+                            <div class="feature-box">
+                                <div class="feature-icon"><i class="fa-solid fa-champagne-glasses"></i></div>
+                                <div>
+                                    <h3>Ambiance Chaleureuse</h3>
+                                    <p>Un lieu idéal pour vos dîners romantiques, familiaux ou d'affaires.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#menu" class="btn btn-secondary">Consulter notre carte</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==============================================
+             4. SECTION DU MENU & TARIFS
+             ============================================== -->
+        <section class="menu section-padding" id="menu">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-badge">Nos Spécialités</span>
+                    <h2 class="section-title">La Carte Gourmande</h2>
+                    <p class="section-subtitle">Chaque création est préparée minute avec des produits d'une fraîcheur absolue.</p>
+                </div>
+
+                <!-- Filtres par catégorie -->
+                <div class="menu-categories" id="menu-categories">
+                    <button class="category-btn active" data-category="tous">Tous les plats</button>
+                    <button class="category-btn" data-category="entrees">Entrées</button>
+                    <button class="category-btn" data-category="plats">Plats Principaux</button>
+                    <button class="category-btn" data-category="desserts">Desserts</button>
+                    <button class="category-btn" data-category="boissons">Boissons & Vins</button>
+                </div>
+
+                <!-- Grille des plats -->
+                <div class="menu-grid" id="menu-grid">
+                    
+                    <!-- Entrée 1 -->
+                    <article class="menu-item" data-category="entrees">
+                        <div class="menu-item-img">
+                            <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80" alt="Salade fraîche et burrata">
+                            <span class="item-tag">Entrée</span>
+                        </div>
+                        <div class="menu-item-info">
+                            <div class="item-header">
+                                <h3 class="item-title">Burrata Crémeuse & Tomates Confites</h3>
+                                <span class="item-price">7867 FCFA</span>
+                            </div>
+                            <p class="item-desc">Burrata artisanale des Pouilles, mesclun croquant, pesto frais au basilic et réduction de balsamique.</p>
+                        </div>
+                    </article>
+
+                    <!-- Entrée 2 -->
+                    <article class="menu-item" data-category="entrees">
+                        <div class="menu-item-img">
+                            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80" alt="Carpaccio de bœuf">
+                            <span class="item-tag">Entrée</span>
+                        </div>
+                        <div class="menu-item-info">
+                            <div class="item-header">
+                                <h3 class="item-title">Carpaccio de Bœuf aux Épices</h3>
+                                <span class="item-price">9178 FCFA</span>
+                            </div>
+                            <p class="item-desc">Fines tranches de filet de bœuf, copeaux de parmesan affiné 24 mois, câpres et huile d'olive vierge extra.</p>
+                        </div>
+                    </article>
+
+                    <!-- Plat 1 -->
+                    <article class="menu-item" data-category="plats">
+                        <div class="menu-item-img">
+                            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=600&q=80" alt="Filet de Saumon">
+                            <span class="item-tag bestseller">Coup de Cœur</span>
+                        </div>
+                        <div class="menu-item-info">
+                            <div class="item-header">
+                                <h3 class="item-title">Pavé de Saumon Rôti & Asperges</h3>
+                                <span class="item-price">14423 FCFA</span>
+                            </div>
+                            <p class="item-desc">Saumon rôti à la plancha, purée de patates douces maison, asperges vertes et émulsion au citron vert.</p>
+                        </div>
+                    </article>
+
+                    <!-- Plat 2 -->
+                    <article class="menu-item" data-category="plats">
+                        <div class="menu-item-img">
+                            <img src="https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=600&q=80" alt="Entrecôte grillée">
+                            <span class="item-tag">Chef</span>
+                        </div>
+                        <div class="menu-item-info">
+                            <div class="item-header">
+                                <h3 class="item-title">Entrecôte Maturée Grillée</h3>
+                                <span class="item-price">17046 FCFA</span>
+                            </div>
+                            <p class="item-desc">Pièce de viande sélectionnée, frites croustillantes faites maison, sauce aux morilles et salade champêtre.</p>
+                        </div>
+                    </article>
+
+                    <!-- Plat 3 -->
+                    <article class="menu-item" data-category="plats">
+                        <div class="menu-item-img">
+                            <img src="https://images.unsplash.com/photo-1602563603373-5d806ff8380c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Risotto crémeux aux champignons">
+                            <span class="item-tag">Végétarien</span>
+                        </div>
+                        <div class="menu-item-info">
+                            <div class="item-header">
+                                <h3 class="item-title">Risotto Carnaroli aux Truffes</h3>
+                                <span class="item-price">13112 FCFA</span>
+                            </div>
+                            <p class="item-desc">Riz crémeux préparé au bouillon de légumes, champignons des bois, crème de truffe noire et noisettes torréfiées.</p>
+                        </div>
+                    </article>
+
+                    <!-- Desserts 1 -->
+                    <article class="menu-item" data-category="desserts">
+                        <div class="menu-item-img">
+                            <img src="https://images.unsplash.com/photo-1579954115545-a95591f28bfc?auto=format&fit=crop&w=600&q=80" alt="Fondant au chocolat">
+                            <span class="item-tag">Dessert</span>
+                        </div>
+                        <div class="menu-item-info">
+                            <div class="item-header">
+                                <h3 class="item-title">Fondant au Chocolat Grand Cru</h3>
+                                <span class="item-price">5900 FCFA</span>
+                            </div>
+                            <p class="item-desc">Cœur coulant au chocolat noir 70%, accompagné d'une boule de glace artisanale à la vanille de Madagascar.</p>
+                        </div>
+                    </article>
+
+                    <!-- Desserts 2 -->
+                    <article class="menu-item" data-category="desserts">
+                        <div class="menu-item-img">
+                            <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=600&q=80" alt="Tartelette aux fruits">
+                            <span class="item-tag">Dessert</span>
+                        </div>
+                        <div class="menu-item-info">
+                            <div class="item-header">
+                                <h3 class="item-title">Tartelette Gourmande aux Fruits Rouges</h3>
+                                <span class="item-price">5573 FCFA</span>
+                            </div>
+                            <p class="item-desc">Pâte sablée croustillante, crème légère à la fleur d'oranger et panaché de fruits rouges du terroir.</p>
+                        </div>
+                    </article>
+
+                    <!-- Boissons 1 -->
+                    <article class="menu-item" data-category="boissons">
+                        <div class="menu-item-img">
+                            <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=600&q=80" alt="Verre de vin rouge">
+                            <span class="item-tag">Boisson</span>
+                        </div>
+                        <div class="menu-item-info">
+                            <div class="item-header">
+                                <h3 class="item-title">Sélection du Sommelier (Verre)</h3>
+                                <span class="item-price">4589 FCFA</span>
+                            </div>
+                            <p class="item-desc">Vins rouges, blancs ou rosés rigoureusement sélectionnés auprès des meilleurs domaines viticoles.</p>
+                        </div>
+                    </article>
+
+                    <!-- Boissons 2 -->
+                    <article class="menu-item" data-category="boissons">
+                        <div class="menu-item-img">
+                            <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=600&q=80" alt="Cocktail signature">
+                            <span class="item-tag">Cocktail</span>
+                        </div>
+                        <div class="menu-item-info">
+                            <div class="item-header">
+                                <h3 class="item-title">Cocktail Signature "Les Merveilles"</h3>
+                                <span class="item-price">6556 FCFA</span>
+                            </div>
+                            <p class="item-desc">Gin infusé au romarin, sirop de pêche de vigne, citron pressé et fines bulles de Prosecco.</p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==============================================
+             5. SECTION GALERIE DE PHOTOS
+             ============================================== -->
+        <section class="gallery section-padding" id="galerie">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-badge">Atmosphère & Saveurs</span>
+                    <h2 class="section-title">Galerie Photos</h2>
+                    <p class="section-subtitle">Un aperçu de notre univers culinaire et de l'ambiance chaleureuse de notre restaurant.</p>
+                </div>
+
+                <div class="gallery-grid">
+                    <div class="gallery-item" data-full="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80">
+                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80" alt="Ambiance de la salle de restaurant">
+                        <div class="gallery-hover">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                            <span>Agrandir l'image</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-full="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80">
+                        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80" alt="Plat gastronomique dressé">
+                        <div class="gallery-hover">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                            <span>Agrandir l'image</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-full="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1200&q=80">
+                        <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=600&q=80" alt="Dressage de table soigné">
+                        <div class="gallery-hover">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                            <span>Agrandir l'image</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-full="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=1200&q=80">
+                        <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=600&q=80" alt="Chef en pleine préparation">
+                        <div class="gallery-hover">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                            <span>Agrandir l'image</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-full="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=1200&q=80">
+                        <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=600&q=80" alt="Cuisine ouverte et conviviale">
+                        <div class="gallery-hover">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                            <span>Agrandir l'image</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-full="https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=1200&q=80">
+                        <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=600&q=80" alt="Dessert gourmand préparé avec finesse">
+                        <div class="gallery-hover">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                            <span>Agrandir l'image</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==============================================
+             6. SECTION AVIS CLIENTS & TÉMOIGNAGES
+             ============================================== -->
+        <section class="reviews section-padding" id="avis">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-badge">Témoignages</span>
+                    <h2 class="section-title">Ce que disent nos convives</h2>
+                </div>
+                <div class="reviews-grid">
+                    <div class="review-card">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review-text">"Une véritable découverte ! Le saumon était cuit à la perfection et le service est d'une prévenance exemplaire. Nous reviendrons sans hésiter."</p>
+                        <div class="reviewer">
+                            <div class="reviewer-avatar">SP</div>
+                            <div>
+                                <h4 class="reviewer-name">Sophie Perrin</h4>
+                                <span class="reviewer-date">Client régulier</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review-text">"Le cadre est splendide, intimiste et chaleureux. Les saveurs sont au rendez-vous du début à la fin. Mention spéciale pour le fondant au chocolat !"</p>
+                        <div class="reviewer">
+                            <div class="reviewer-avatar">ML</div>
+                            <div>
+                                <h4 class="reviewer-name">Marc Lefèvre</h4>
+                                <span class="reviewer-date">Dîner en couple</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review-text">"Très belle adresse pour un repas d'anniversaire réussi. Réservation simple et accueil royal de la part de toute l'équipe. Bravo !"</p>
+                        <div class="reviewer">
+                            <div class="reviewer-avatar">AD</div>
+                            <div>
+                                <h4 class="reviewer-name">Aminata Diallo</h4>
+                                <span class="reviewer-date">Repas de groupe</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==============================================
+             7. SECTION RÉSERVATION
+             ============================================== -->
+        <section class="reservation section-padding" id="reservation">
+            <div class="container">
+                <div class="reservation-card">
+                    <div class="reservation-info">
+                        <span class="section-badge light">Réservation en Ligne</span>
+                        <h2 class="reservation-title">Réservez votre table</h2>
+                        <p>
+                            Pour être certain de disposer d'une table à la date et à l'heure souhaitées, complétez le formulaire ci-contre ou contactez-nous en direct par téléphone ou WhatsApp.
+                        </p>
+                        
+                        <div class="info-list">
+                            <div class="info-item">
+                                <i class="fa-solid fa-clock"></i>
+                                <div>
+                                    <strong>Horaires du Service</strong>
+                                    <p>Midi : 12h00 - 14h30 | Soir : 19h00 - 23h00</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fa-solid fa-phone"></i>
+                                <div>
+                                    <strong>Par Téléphone</strong>
+                                    <p><a href="tel:+2290141908286">+229 01 41 90 82 86</a></p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                <div>
+                                    <strong>Directement par WhatsApp</strong>
+                                    <p>Réponse rapide pour toute demande urgente</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="reservation-form-wrapper">
+                        <form id="reservation-form" class="reservation-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name"><i class="fa-regular fa-user"></i> Nom complet *</label>
+                                    <input type="text" id="name" name="name" placeholder="Ex: Jean Dupont" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone"><i class="fa-solid fa-phone"></i> Téléphone *</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="Ex: 06 12 34 56 78" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="date"><i class="fa-regular fa-calendar"></i> Date souhaitée *</label>
+                                    <input type="date" id="date" name="date" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="time"><i class="fa-regular fa-clock"></i> Heure souhaitée *</label>
+                                    <select id="time" name="time" required>
+                                        <option value="">Sélectionnez l'heure</option>
+                                        <option value="12:00">12:00</option>
+                                        <option value="12:30">12:30</option>
+                                        <option value="13:00">13:00</option>
+                                        <option value="13:30">13:30</option>
+                                        <option value="19:00">19:00</option>
+                                        <option value="19:30">19:30</option>
+                                        <option value="20:00">20:00</option>
+                                        <option value="20:30">20:30</option>
+                                        <option value="21:00">21:00</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="guests"><i class="fa-solid fa-user-group"></i> Nombre de personnes *</label>
+                                    <select id="guests" name="guests" required>
+                                        <option value="1">1 personne</option>
+                                        <option value="2" selected>2 personnes</option>
+                                        <option value="3">3 personnes</option>
+                                        <option value="4">4 personnes</option>
+                                        <option value="5">5 personnes</option>
+                                        <option value="6">6 personnes</option>
+                                        <option value="plus">7+ personnes (Groupe)</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email"><i class="fa-regular fa-envelope"></i> E-mail (facultatif)</label>
+                                    <input type="email" id="email" name="email" placeholder="votre.email@exemple.com">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="notes"><i class="fa-regular fa-comment-dots"></i> Remarques particulières (Allergies, anniversaire...)</label>
+                                <textarea id="notes" name="notes" rows="3" placeholder="Indiquez vos préférences ou besoins spécifiques..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block">
+                                <i class="fa-solid fa-paper-plane"></i> Confirmer la Demande de Réservation
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==============================================
+             8. SECTION CONTACT, HORAIRES & LOCALISATION
+             ============================================== -->
+        <section class="contact section-padding" id="contact">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-badge">Nous Trouver</span>
+                    <h2 class="section-title">Contact & Accès</h2>
+                    <p class="section-subtitle">Nous serons ravis de vous accueillir au sein de notre établissement.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Carte 1: Adresse -->
+                    <div class="contact-card">
+                        <div class="card-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <h3>Adresse</h3>
+                        <p>FIGJROSSE CALVAIRE<br>75001 COTONOU BENIN</p>
+                    
+                    </div>
+
+                    <!-- Carte 2: Horaires -->
+                    <div class="contact-card">
+                        <div class="card-icon">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+                        <h3>Horaires d'Ouverture</h3>
+                        <ul class="schedule-list">
+                            <li><span>Mardi - Vendredi :</span> 12h00 - 14h30 / 19h00 - 23h00</li>
+                            <li><span>Samedi :</span> 12h00 - 15h00 / 19h00 - 23h30</li>
+                            <li><span>Dimanche :</span> 12h00 - 16h00 (Brunch)</li>
+                            <li><span>Lundi :</span> Fermé (Repos)</li>
+                        </ul>
+                    </div>
+
+                    <!-- Carte 3: Direct WhatsApp & Téléphone -->
+                    <div class="contact-card highlight-card">
+                        <div class="card-icon">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <h3>Échangez avec nous</h3>
+                        <p>Une question ? Une demande spéciale ? Écrivez-nous directement sur WhatsApp pour une réponse instantanée.</p>
+                        <a href="https://wa.me/2290141908286?text=Bonjour%2C%20je%20souhaite%20obtenir%20des%20renseignements%20sur%20le%20restaurant%20Les%20Merveilles" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-card">
+                            <i class="fa-brands fa-whatsapp"></i> Discuter sur WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==============================================
+         9. PIED DE PAGE (FOOTER)
+         ============================================== -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-col brand-col">
+                <div class="footer-logo">
+                    <span class="logo-accent">Les</span> Merveilles
+                </div>
+                <p>
+                    Une cuisine généreuse et raffinée, dédiée au plaisir de vos papilles dans une atmosphère sereine et conviviale.
+                </p>
+                <div class="footer-socials">
+                    <a href="https://www.instagram.com/gdsn.era/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-title">Navigation</h4>
+                <ul class="footer-links">
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#a-propos">À Propos de nous</a></li>
+                    <li><a href="#menu">Notre Carte</a></li>
+                    <li><a href="#galerie">Galerie Photos</a></li>
+                    <li><a href="#reservation">Réservations</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-title">Contact</h4>
+                <ul class="footer-contact">
+                    <li><i class="fa-solid fa-location-dot"></i> 12 Rue de l'eglise chatholique, 75001 fidjrossè</li>
+                    <li><i class="fa-solid fa-phone"></i> +229 01 41 90 82 86</li>
+                    <li><i class="fa-brands fa-whatsapp"></i> +229 01 41 90 82 86</li>
+                    <li><i class="fa-solid fa-envelope"></i> godsongodson021@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container bottom-flex">
+                <p>&copy; 2026 Restaurant <strong>Les Merveilles</strong>. Tous droits réservés.</p>
+                <p class="credit">Créé avec passion • Code HTML, CSS & JavaScript clair et personnalisable.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==============================================
+         10. BOUTON FLOTTANT WHATSAPP
+         ============================================== -->
+    <a href="https://wa.me/33612345678?text=Bonjour%20Restaurant%20Les%20Merveilles%2C%20je%20souhaite%20des%20informations%20ou%20faire%20une%20r%C3%A9servation." 
+       class="whatsapp-floating-btn" 
+       id="whatsapp-btn"
+       target="_blank" 
+       rel="noopener noreferrer" 
+       aria-label="Contacter sur WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">Discutez avec nous !</span>
+    </a>
+
+    <!-- ==============================================
+         11. MODAL LIGHTBOX POUR LA GALERIE PHOTOS
+         ============================================== -->
+    <div class="lightbox-modal" id="lightbox-modal">
+        <div class="lightbox-backdrop"></div>
+        <div class="lightbox-content">
+            <button class="lightbox-close" id="lightbox-close" aria-label="Fermer la vue agrandie">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <img src="" alt="Photo agrandie" id="lightbox-img">
+        </div>
+    </div>
+
+    <!-- ==============================================
+         12. MODAL DE CONFIRMATION DE RÉSERVATION
+         ============================================== -->
+    <div class="reservation-modal" id="reservation-modal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-box">
+            <div class="modal-icon-success">
+                <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <h3 class="modal-title">Demande Envoyée avec Succès !</h3>
+            <p id="modal-summary" class="modal-summary">
+                Merci ! Nous avons bien reçu votre demande de réservation.
+            </p>
+            <div class="modal-actions">
+                <a href="#" id="modal-whatsapp-action" class="btn btn-whatsapp-card" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-whatsapp"></i> Confirmer aussi par WhatsApp
+                </a>
+                <button type="button" class="btn btn-secondary" id="modal-close-btn">Fermer</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fichier JavaScript pour l'interactivité -->
+    <script src="script.js"></script>
+</body>
+</html>
